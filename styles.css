@@ -1,0 +1,85 @@
+body{
+    font-family: "Outfit";
+    background: url("images/ArtGalleryBG.jpg");
+    background-position: cover;
+    color:rgb(255, 255, 255);
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: slideIn both;
+    animation-duration: 700ms;
+    color: #fff;
+}
+@keyframes slideIn {
+    from{
+        transform: translateY(-100%);
+        scale: 0.5;
+    }
+    to{
+        transform: translateY(0%);
+        scale: 1;
+    }
+}
+h1{
+    font-size: 60px;
+    text-shadow: 2px 2px 2px #fff;
+}
+h2{
+    font-size: 55px;
+    text-shadow: 2px 2px 2px #fff;
+}
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+.img {
+    padding: 2em;
+    margin: 10px;
+    height: 700px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    --gap: 20px;
+    gap: var(--gap);
+}
+.img:hover{
+    scale: 1.05;
+    backdrop-filter: none;
+    transition: all 700ms;
+}
+.img img {
+    margin: 20px;
+    width: 400px;
+    height: 450px;
+}
+.img, .img img {
+    border-radius: 5%;  
+}
+p span {
+    visibility: hidden;
+}
+.slideUp {
+    animation: slideUp;
+    animation-duration: 700ms;
+}
+@keyframes slideUp {
+    from{
+        transform: translateY(100%);
+        scale: 0.5;
+    }
+    to{
+        transform: translateY(0%);
+        scale: 1;
+    }
+}
+.scrollInfinite {
+    animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+    to{
+        transform: translateX(calc(-500% - var(--gap)));
+    }
+}
