@@ -53,8 +53,8 @@ h3 i {
 }
 .img {
     padding: 2em;
-    margin: 10px;
-    height: 700px;
+    margin: 70px;
+    height: 600px;
     background: transparent;
     backdrop-filter: blur(50px);
     cursor: pointer;
@@ -69,7 +69,7 @@ h3 i {
 .img img {
     margin: 20px;
     width: 400px;
-    height: 450px;
+    height: 400px;
 }
 .img, .img img {
     border-radius: 5%;  
