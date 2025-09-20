@@ -24,14 +24,30 @@ body{
     }
 }
 h1{
-    font-size: 60px;
+    font-size: 110px;
     text-shadow: 2px 2px 2px #fff;
 }
 h2{
-    font-size: 55px;
+    font-size: 105px;
     text-shadow: 2px 2px 2px #fff;
 }
-.images {
+h3{
+    font-size: 100px;
+    margin-top: 0;
+}
+h3 i {
+    animation: scrollv 1s infinite;
+    overflow: hidden;
+}
+@keyframes scrollv {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+.images, .images2 {
     display: flex;
     justify-content: space-between;
 }
@@ -46,9 +62,9 @@ h2{
     gap: var(--gap);
 }
 .img:hover{
-    scale: 1.05;
+    scale: 1.01;
     backdrop-filter: none;
-    transition: all 700ms;
+    transition: all 700ms;  
 }
 .img img {
     margin: 20px;
@@ -75,11 +91,33 @@ p span {
         scale: 1;
     }
 }
-.scrollInfinite {
-    animation: scroll 10s linear infinite;
+.images .img {
+    animation: scrollR 5s linear infinite;
+}
+@keyframes scrollR {
+    from{
+        transform: translateX(-500%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.images2 .img {
+    animation: scroll 5s linear infinite;
 }
 @keyframes scroll {
     to{
         transform: translateX(calc(-500% - var(--gap)));
     }
+}
+.images2 .img {
+    animation-delay: 500ms;
+}
+.images{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.images2{
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
