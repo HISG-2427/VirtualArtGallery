@@ -54,9 +54,6 @@ h1{
 .img, .img img {
     border-radius: 5%;  
 }
-p span {
-    visibility: hidden;
-}
 .slideUp {
     animation: slideUp;
     animation-duration: 700ms;
