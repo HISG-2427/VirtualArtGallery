@@ -27,26 +27,6 @@ h1{
     font-size: 110px;
     text-shadow: 2px 2px 2px #fff;
 }
-h2{
-    font-size: 105px;
-    text-shadow: 2px 2px 2px #fff;
-}
-h3{
-    font-size: 100px;
-    margin-top: 0;
-}
-h3 i {
-    animation: scrollv 1s infinite;
-    overflow: hidden;
-}
-@keyframes scrollv {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(100%);
-    }
-}
 .images, .images2 {
     display: flex;
     justify-content: space-between;
@@ -92,7 +72,7 @@ p span {
     }
 }
 .images .img {
-    animation: scrollR 5s linear infinite;
+    animation: scrollR 15s linear infinite;
 }
 @keyframes scrollR {
     from{
@@ -103,7 +83,7 @@ p span {
     }
 }
 .images2 .img {
-    animation: scroll 5s linear infinite;
+    animation: scroll 15s linear infinite;
 }
 @keyframes scroll {
     to{
